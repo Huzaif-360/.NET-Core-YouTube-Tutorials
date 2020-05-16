@@ -10,7 +10,8 @@ using Microsoft.Extensions.Logging;
 namespace Employee_Management
 {
     public class Program
-        //Completed .Net Core Youtube Tutorial 1
+        //Completed .Net Core Youtube Tutorial 
+        //Setting up machine for asp net core development
     {
         public static void Main(string[] args)
         {
