@@ -11,7 +11,7 @@ namespace Employee_Management
 {
     public class Program
         //Completed dotNet Core Youtube Tutorial 
-        //Creating asp net core web application
+        //ASP NET core project file
     {
         public static void Main(string[] args)
         {
