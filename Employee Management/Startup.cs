@@ -11,6 +11,13 @@ using Microsoft.Extensions.Hosting;
 namespace Employee_Management
 {
     public class Startup
+
+        //The Internal Web Server is known as Ketrel
+        // The External Web Server is known as IIS, Nginx or Apache
+        // Apache is a local external server.
+        
+        //Kestrel:
+            //It is a cross platform web server for ASP.NET Core
     {
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
