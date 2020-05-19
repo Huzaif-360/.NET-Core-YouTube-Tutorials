@@ -3,6 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Employee_Management</RootNamespace>
+  <!--<ASPCoreHostingModel>InProcess</ASPCoreHostingModel>-->
+	  <ASPCoreHostingModel>OutOfProcess</ASPCoreHostingModel>
+  
   </PropertyGroup>
 
 </Project>
