@@ -37,7 +37,7 @@ namespace Employee_Management
          * 
          * 
          * Internal (Client): ..............Kestrel Web Server
-         * External Web Server:.............. Apache, IIS etc.
+         * External Web Server:.............. Apache, IIS and Ngnix etc.
          * 
          * For OutOfProcess Kestrel WebServer is used to make connection of the application with the internet via HTTP
          * 
@@ -47,6 +47,24 @@ namespace Employee_Management
          * 
          * 1: Internal (Client): ......HTTP........Kestrel Web Server  ............................(Less Secure)
          * 2: Internal (Client): ...HTTP...(Apache/IIS/Ngnix)....HTTP....Kestrel Web Server........(More Secure due to extra Configuration by external web server)
+         * 
+         * 
+         * 
+         * 
+         * InProcess                                                 OutOfPorcess
+         * 
+         *      1.  
+         * iisexpress.exe or w3wp.exe webserver                   dotnet.exe
+         *      
+         *      2. 
+         * Only 1 web server  (Internal)                          Two Web servers (internal and external)
+         *      
+         *      3.  
+         * (1 server = Kestrel server)                           (2 servers= Kestrel and Reverse Proxy Server(i.e. Apache, IIS and Ngnix)
+         * 
+         *      4.
+         * Better Performance                                       Less effiecient as (poxy serer needs confirmation between kerstrel and internet)
+         * 
         */
     {
         public static void Main(string[] args)
