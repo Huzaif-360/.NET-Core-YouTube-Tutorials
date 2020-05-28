@@ -11,59 +11,9 @@ namespace Employee_Management
 {
     public class Program
 
-        /*DotNet Core Youtube Tutorial 7
-         * ASP NET Core out of process hosting
+        /*DotNet Core Youtube Tutorial 8
+         * ASP NET Core launchsettings json file
          * 
-         * Internet................ HTTP.................. IIS(w3wp Web running Server)
-         * 
-         * Our Application is being hosted in IIS(w3wp Web running Server) 
-         * 
-         * WithIn InProcess Hosting there is only one server
-         * 
-         * Inprocess Hosting is better than out Porcess Hosting
-         * 
-         * 
-         * 
-         * 
-         * ....................................................
-         * 
-         * To make Out Process hosting 2 methods:
-         * 1. To Replace inPrcess with OutPorcess
-         *      <ASPCoreHostingModel>OutOfProcess</ASPCoreHostingModel>
-         *          
-         * 2. To remove entire Line, As the default setting is for OutProcess Hosting 
-         * 
-         * 
-         * 
-         * 
-         * Internal (Client): ..............Kestrel Web Server
-         * External Web Server:.............. Apache, IIS and Ngnix etc.
-         * 
-         * For OutOfProcess Kestrel WebServer is used to make connection of the application with the internet via HTTP
-         * 
-         * ....................................................................................................................................................................................
-         * 
-         * OutOFProcess Hosting:
-         * 
-         * 1: Internal (Client): ......HTTP........Kestrel Web Server  ............................(Less Secure)
-         * 2: Internal (Client): ...HTTP...(Apache/IIS/Ngnix)....HTTP....Kestrel Web Server........(More Secure due to extra Configuration by external web server)
-         * 
-         * 
-         * 
-         * 
-         * InProcess                                                 OutOfPorcess
-         * 
-         *      1.  
-         * iisexpress.exe or w3wp.exe webserver                   dotnet.exe
-         *      
-         *      2. 
-         * Only 1 web server  (Internal)                          Two Web servers (internal and external)
-         *      
-         *      3.  
-         * (1 server = Kestrel server)                           (2 servers= Kestrel and Reverse Proxy Server(i.e. Apache, IIS and Ngnix)
-         * 
-         *      4.
-         * Better Performance                                       Less effiecient as (poxy serer needs confirmation between kerstrel and internet)
          * 
         */
     {
